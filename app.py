@@ -123,7 +123,7 @@ st.markdown(f"""
 div[data-baseweb="tab-list"] {{
   width: 100%;
   max-width: 900px;                /* keep it elegant on widescreens */
-  margin: 0.75rem auto 0.75rem;    /* center the bar */
+  margin: 0rem auto 0.75rem;    /* center the bar */
   padding: 6px;                    /* space around pills */
   background: #eaf2f1;             /* soft track color */
   border-radius: 14px;             /* rounded bar */
@@ -170,6 +170,20 @@ button[data-baseweb="tab"] > div:first-child {{
     border-radius: 0;
   }}
 }}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+/* Remove excessive top padding */
+.main > div:first-child {
+    padding-top: 0rem;
+}
+
+/* Adjust block container spacing */
+.block-container {
+    padding-top: 1rem;   /* Reduce from Streamlit's default ~6rem */
+}
 </style>
 """, unsafe_allow_html=True)
 
