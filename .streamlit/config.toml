@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#0f988f"         # teal accent to match your CSS
+backgroundColor="#FFFFFF"      # white background
+secondaryBackgroundColor="#F6FAF9" # soft card background
+textColor="#000000"            # black text
+font="sans serif"
